@@ -1,0 +1,29 @@
+{
+    "name": "Sample Quiz",
+    "description": "Sample Quiz",
+    "questions": [
+        {
+            "text": "Are you 18 or older?",
+            "options": [
+                ["Yes", 0],
+                ["No", 0]
+            ]
+        },
+        {
+            "text": "What's your highest level of education?",
+            "options": [
+                ["High school", 0],
+                ["Some college", 0],
+                ["Graduate", 0],
+                ["Others", 0]
+            ]
+        },
+        {
+            "text": "Which one is your priority?",
+            "options": [
+                ["Career", 0],
+                ["Work life balance", 0]
+            ]
+        }
+    ]
+}

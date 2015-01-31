@@ -1,0 +1,26 @@
+{% extends "quiz_base.html" %}
+{% block title %} {{quiz['name']}} {% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .question-correct:after {
+            content: "✓";
+            font-size: 30px;
+            color: green;
+            padding-left: 10px;
+        }
+
+        .question-incorrect:after {
+            content: "✗";
+            font-size: 30px;
+            color: red;
+            padding-left: 10px;
+        }
+    </style>
+{% endblock %}
+{% block page_title %}{{quiz['name']}} - Checking ({{correct}} / {{total}}){% endblock %}
+{% block questions %}
+        <div>
+            <h4> Successfully completed poll </h4>
+        </div>
+{% endblock %}

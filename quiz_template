@@ -1,0 +1,15 @@
+{
+    "name": "[Quiz Name]",
+    "description": “[Quiz description]",
+    "questions": [
+        {
+            "text": "This is the actual question",
+            "options": [
+                ["A list of as many option strings as you want. Again, you can use HTML.", true],
+                ["Each option is paired with a boolean true/false that says whether it's correct", true],
+                ["All answers are considered to be correct, as its an opinion poll"],
+                ["The options will be randomized", false],
+            ]
+        }
+    ]
+}
