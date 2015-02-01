@@ -1,8 +1,10 @@
 {% extends "quiz_base.html" %}
 {% block page_title %}{{quiz['name']}}{% endblock %}
 {% block questions %}
-    <form method="post" action="/check_quiz/{{id}}">
-        <input type="hidden" name="ord" value="{{quiz_ordering}}" />
+    <form method="post" action="/update_quiz">
+        <input type="hidden" name="q_eid" value="{{q_eid}}" />
+        <input type="hidden" name="ord_qns" value="{{ordered_qns}}" />
+        <input type="hidden" name="post_qns" value="{{posted_qns}}" />
 
         {% for question in quiz['questions'] %}
             {% set outer_loop = loop %}
@@ -13,6 +15,6 @@
                 {% endfor %}
             </p>
         {% endfor %}
-        <input type="submit" value="Submit Your Quiz">
+        <input type="submit" value="Submit">
     </form>
 {% endblock %}

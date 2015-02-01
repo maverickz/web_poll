@@ -1,5 +1,4 @@
 {% extends "quiz_base.html" %}
-{% block title %} {{quiz['name']}} {% endblock %}
 {% block head %}
     {{ super() }}
     <style type="text/css">
@@ -18,7 +17,7 @@
         }
     </style>
 {% endblock %}
-{% block page_title %}{{quiz['name']}} - Checking ({{correct}} / {{total}}){% endblock %}
+{% block page_title %}{{quiz['name']}}{% endblock %}
 {% block questions %}
         <div>
             <h4> Successfully completed poll </h4>
